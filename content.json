@@ -1,0 +1,456 @@
+{
+  "litters": [
+    {
+      "title": "Sugar & Sonic",
+      "status": "Waitlist open",
+      "tag": "Multi-gen",
+      "body": "Multi-gen Australian Bernedoodles. Sugar is our medium Australian Labradoodle dam; Sonic is a mini Bernedoodle sire. Both parents are 35–40 lb — sweet, brushable, and tuned in to people.",
+      "photos": [
+        {
+          "image": "/images/sugar-new.jpg",
+          "label": "SUGAR",
+          "focus": "32%"
+        },
+        {
+          "image": "/images/sonic-new.jpg",
+          "label": "SONIC",
+          "focus": "30%"
+        }
+      ]
+    },
+    {
+      "title": "Current litter",
+      "status": "Puppies here",
+      "tag": "Multi-gen",
+      "body": "Multi-gen Australian Bernedoodles out of Sugar and Sonic. Parents are 35–40 lb: Sonic is a mini Bernedoodle, Sugar a medium Labradoodle. Ask us for weekly photos as they grow.",
+      "photos": [
+        {
+          "image": "/images/litter-newborns.jpg",
+          "label": "",
+          "focus": "50%"
+        }
+      ]
+    },
+    {
+      "title": "Ginger & KodaChrome",
+      "status": "Planned",
+      "tag": "Planned",
+      "body": "Ginger’s third litter, paired with KodaChrome — a mini multi-gen Bernedoodle, 19.5 in and 27 lb, OFA hips good. Waitlist families hear first, well before it is announced publicly.",
+      "photos": [
+        {
+          "image": "/images/ginger-new.jpg",
+          "label": "GINGER",
+          "focus": "40%"
+        },
+        {
+          "image": "/images/kodachrome-dog.jpg",
+          "label": "KODACHROME",
+          "focus": "35%"
+        }
+      ]
+    }
+  ],
+  "tailGroups": [
+    {
+      "litter": "Sugar & Sonic’s Candy Litter",
+      "entries": [
+        {
+          "name": "Lolli/Stella",
+          "photo": "/images/tail-lolli.jpg",
+          "story": "Lolli was Sugar’s only reddish-blond pup, making her Sugar’s clone. She was so much fun!"
+        },
+        {
+          "name": "Stella/Lolli",
+          "photo": "/images/tail-stella.jpg",
+          "story": "Stella resides in Northern California where she is the social butterfly of the community. She frequents the coffee shops and is always ready for a hike."
+        },
+        {
+          "name": "Oreo/Oreo",
+          "photo": "/images/tails/oreo-pup.jpg",
+          "story": "Oreo was so fun to raise. He was one of a kind in the litter — the only black and white doodle. As time went on, we found out he looked just like his grandfather."
+        },
+        {
+          "name": "Oreo/Oreo",
+          "photo": "/images/tails/oreo-now.jpg",
+          "story": "Oreo resides in the bay area with his great parents! They absolutely adore him!"
+        },
+        {
+          "name": "Kisses/Zuri",
+          "photo": "/images/tails/kisses-pup.jpg",
+          "story": "Kisses is such a beautiful tri-merle! Her white markings are just stunning! She was just a sweetheart!"
+        },
+        {
+          "name": "Zuri/Kisses",
+          "photo": "/images/tails/zuri-now.jpg",
+          "story": "Zuri resides in a neighboring town with Cachi/Cocoa from one of Ginger’s first litter. They both have wonderful human parents!"
+        },
+        {
+          "name": "Milky/Gerald",
+          "photo": "/images/tails/milky-pup.jpg",
+          "story": "Milky is such a sweet boy! He was always everyone’s favorite. He had the most calm personality."
+        },
+        {
+          "name": "Gerald/Milky",
+          "photo": "/images/tails/gerald-now.jpg",
+          "story": "Gerald resides in Fresno with a great family! They run a daycare in their home and Gerald is a welcome friend to all of the kids."
+        },
+        {
+          "name": "Snickers/Gizmo",
+          "photo": "/images/tails/snickers-pup.jpg",
+          "story": "Snickers was our little runt! There were a few times we did not know he would make it. But oh how he fought! He went from being a little tiny weakling to a very handsome boy!"
+        },
+        {
+          "name": "Gizmo/Snickers",
+          "photo": "/images/tails/gizmo-now.jpg",
+          "story": "Gizmo makes his home close by with a wonderful family. He has lots of kids and his new canine sister Xannie as part of his family. He is very much adored!"
+        },
+        {
+          "name": "Skittle/Goldie",
+          "photo": "/images/tails/skittle-pup.jpg",
+          "story": "Skittle is a beautiful apricot parti! Her coloring is so similar to her mom’s, just with more white. She was so spunky and smart!"
+        },
+        {
+          "name": "Goldie/Skittle",
+          "photo": "/images/tails/goldie-now.jpg",
+          "story": "Goldie resides in the south valley where she just graduated as a cardiac alert dog. We are so impressed with this sweetheart!"
+        },
+        {
+          "name": "Hershey/Burt",
+          "photo": "/images/tails/hershey-pup.jpg",
+          "story": "Hershey was our only puppy that looks like a Bernese Mountain Dog. He is beautiful! He is on the smaller side but so spunky!"
+        },
+        {
+          "name": "Burt/Hershey",
+          "photo": "/images/tails/burt-now.jpg",
+          "story": "Burt lives in State College, Pennsylvania. He resides with our son and will be used as a stud. Burt has a great life as he goes to work every day with his human dad. But work is so fun as it is on a baseball field! Burt rides on mowers, dodges water spraying from hoses and runs until he poops out! He does all of this with his big canine brother Chief, a stunning white Akita."
+        },
+        {
+          "name": "Reese/Sky",
+          "photo": "/images/tails/reese-pup.jpg",
+          "story": "Reese was the cutest, spunkiest little thing. With her beautiful apricot parti coat and her willingness to bounce all over, one word comes to mind — FUN!"
+        },
+        {
+          "name": "Sky/Reese",
+          "photo": "/images/tails/sky-now.jpg",
+          "story": "Reese only had to move two doors down to find her special people! She is now Sky and has her perfect playmate, her human sister! It was a match made in heaven!"
+        },
+        {
+          "name": "Crunch/Leo",
+          "photo": "/images/tails/crunch-pup.jpg",
+          "story": "Everyone ooohed and aaahed when Crunch was born. His colors were absolutely stunning! Not to mention how cute he was!"
+        },
+        {
+          "name": "Leo/Crunch",
+          "photo": "/images/tails/leo-now.jpg",
+          "story": "Crunch is now Leo and he lives with his wonderful family on a ranch in Colorado. Leo is living his dream!"
+        },
+        {
+          "name": "Rolo/Happy",
+          "photo": "/images/tails/rolo-pup.jpg",
+          "story": "Rolo was so fluffy. His gorgeous apricot parti coat made a big ball of fluff. He was always one of the larger of the litter but never a bully."
+        },
+        {
+          "name": "Happy/Rolo",
+          "photo": "/images/tails/happy-now.jpg",
+          "story": "Rolo is now Happy! Happy lives in Fresno with his human brother and sister. I am not sure if Happy loves his human siblings more or if they love him more. Quite mutual!"
+        },
+        {
+          "name": "Kit/Maisy",
+          "photo": "/images/tails/kit-pup.jpg",
+          "story": "Kit was one of our apricot partis and looked most like a spaniel. She was beautiful with her long ears!"
+        },
+        {
+          "name": "Maisy/Kit",
+          "photo": "/images/tails/maisy-now.jpg",
+          "story": "Kit is now Maisy and lives with her wonderful family in central California. Maisy’s whole family is awesome but her special bond is with her human sister."
+        },
+        {
+          "name": "Tootsie/Stormy",
+          "photo": "/images/tails/tootsie-pup.jpg",
+          "story": "Last but not least is Tootsie. Tootsie was one of our tiniest puppies. Such a cute tri merle. She was tiny but always right in the middle of everything."
+        },
+        {
+          "name": "Stormy/Tootsie",
+          "photo": "/images/tails/stormy-now.jpg",
+          "story": "Tootsie is now Stormy and still lives with us, with her mom and grandma. She belongs to our son. There is a possibility we could breed her at some point. She is the cutest, and personality plus!"
+        }
+      ]
+    },
+    {
+      "litter": "Ginger & Sonic",
+      "entries": [
+        {
+          "name": "Trump/Handsome Harvey",
+          "photo": "/images/tails/trump-pup.jpg",
+          "story": "Trump was such a delight to raise. His love for water was undeniable at a very young age. He was always the first to empty the water pan."
+        },
+        {
+          "name": "Handsome Harvey/Trump",
+          "photo": "/images/tails/harvey-now.jpg",
+          "story": "Handsome Harvey wears his name very well! Harvey resides in southern California with his very devoted family. He gets to go to work with his mom, out for walks, and all the fun of sunny California."
+        },
+        {
+          "name": "Maga/Joey",
+          "photo": "/images/tails/maga-pup.jpg",
+          "story": "Maga was always such a joy! Always so well behaved!"
+        },
+        {
+          "name": "Joey/Maga",
+          "photo": "/images/tails/joey-now.jpg",
+          "story": "When Joey’s mom came to pick her puppy out, it only took her at most 30 seconds. She looked at Joey and said that is the one! She told him what kind of life he would have and there was an instant connection! And he does have a wonderful life on the Central Coast, filled with adventure. Joey’s mom says Joey is pure love!"
+        },
+        {
+          "name": "Kennedy/Lucky",
+          "photo": "/images/tails/kennedy-pup.jpg",
+          "story": "Kennedy gave us so many laughs! She was actually an escape artist! Out of 23 puppies, she is the only one who would try and succeed at getting out of her pen. So much so that my grandson, Cooper, built a double gate like at the zoo. You can imagine her surprise when she was trapped. Other than that, she always wanted in my lap. Just loved her!"
+        },
+        {
+          "name": "Lucky/Kennedy",
+          "photo": "/images/tails/lucky-now.jpg",
+          "story": "Lucky resides in Fresno with her human parents. Her human mom says she is very smart and has the best personality. She loves her walks!"
+        },
+        {
+          "name": "Liberty/Abbie",
+          "photo": "/images/tails/liberty-pup.jpg",
+          "story": "Liberty has the perfect coloring and coat! She has white in all the right places and just enough curl. Love this little gal!"
+        },
+        {
+          "name": "Abbie/Liberty",
+          "photo": "/images/tails/abbie-now.jpg",
+          "story": "Abbie’s home is in Southern California in a retirement community. Her yard butts up to the walking path; hence, Abbie greets everyone who comes by."
+        },
+        {
+          "name": "Caroline/Mollie",
+          "photo": "/images/tails/caroline-pup.jpg",
+          "story": "Caroline was a dream pup to raise! She was always so sweet. She was very mellow but would also stand her ground with her larger siblings."
+        },
+        {
+          "name": "Mollie/Caroline",
+          "photo": "/images/tails/mollie-now.jpg",
+          "story": "Mollie lives all the way in Virginia with her great human parents. Mollie also lives with her half sister Noel. They have a great time together. Also Mollie’s half brother Tiberius lives very close and they also get to play!"
+        },
+        {
+          "name": "Justice/Charlie",
+          "photo": "/images/tails/justice-pup.jpg",
+          "story": "Justice was the very first puppy born! We thought he was just beautiful with his tri-colored merle coat."
+        },
+        {
+          "name": "Charlie/Justice",
+          "photo": "/images/tails/charlie-now.jpg",
+          "story": "Charlie lives with a dog-loving human family in the Bay area. He has quite a few canine siblings — I think he has one of every color. Charlie has a very fun home! There is a possibility he will be trained as a service dog."
+        },
+        {
+          "name": "Vance/Miles",
+          "photo": "/images/tails/vance-pup.jpg",
+          "story": "Vance had all the good qualities! He was a beautiful red, perfect white markings, very calm, and just as sweet as could be!"
+        },
+        {
+          "name": "Miles/Vance",
+          "photo": "/images/tails/miles-now.jpg",
+          "story": "Miles resides in Northern California in a guardian home. He has a really fun human mom. Miles will be part of the breeding program for Riverbend Doodles. We can’t wait to see his offspring!"
+        },
+        {
+          "name": "Doge/Bo",
+          "photo": "/images/tails/doge-pup.jpg",
+          "story": "Isn’t Doge just the cutest? He has the best coat, it is so soft and fluffy! Doge was our water puppy — he emptied the water dish daily!"
+        },
+        {
+          "name": "Bo/Doge",
+          "photo": "/images/tails/bo-now.jpg",
+          "story": "Bo lives in Fresno with his great human family and his half brother Bentley. As soon as I knew that Doge was a water dog, I reached out to Bentley’s family as Bentley is also a water dog. They absolutely love the water just like their mom! Bo and Bentley are always going for a swim. This picture describes it all!"
+        },
+        {
+          "name": "Baron/Barron",
+          "photo": "/images/tails/baron-pup.jpg",
+          "story": "Baron was very much a favorite amongst all the kids! He was a very good puppy. He was going to be pretty big."
+        },
+        {
+          "name": "Barron/Baron",
+          "photo": "/images/tails/barron-now.jpg",
+          "story": "Barron lives in a small farm town with a family with human siblings that play outside with him all the time. Barron is very good with all the kids! His human dad says he wants to be a lap dog!"
+        },
+        {
+          "name": "Melania/Ginger",
+          "photo": "/images/tails/melania-pup.jpg",
+          "story": "Melania has it all! She is beautiful! Melania is a clone of her mom — of all the pups, she looked just like her. Melania had the sweetest temperament and was always a favorite!"
+        },
+        {
+          "name": "Ginger/Melania",
+          "photo": "/images/tails/ginger2-now.jpg",
+          "story": "Melania is now Ginger. She has her mom’s name; so fitting! Ginger resides in the Sacramento area with her human mom and sister. They love her and say that she is family now!"
+        }
+      ]
+    },
+    {
+      "litter": "Ginger’s First Litter",
+      "entries": [
+        {
+          "name": "Rudy",
+          "photo": "/images/tails/rudy-pup.jpg",
+          "story": "Rudy was one of the tiniest of the litter. He was also a climber. He could always climb out of the pen and then be unhappy he was away from the others."
+        },
+        {
+          "name": "Rudy",
+          "photo": "/images/tails/rudy-now.jpg",
+          "story": "Rudy has a wonderful forever home. He has 3 human brothers that absolutely adore him. Rudy is a certified trained service dog. Ginger’s Doodles is very proud of Rudy, his family and this huge accomplishment!"
+        },
+        {
+          "name": "Silver/Poppy",
+          "photo": "/images/tails/silver-pup.jpg",
+          "story": "Silver was the tiniest, most petite little girl! She was beautiful with her taupe coat. Always so sweet!"
+        },
+        {
+          "name": "Poppy/Silver",
+          "photo": "/images/tails/poppy-now.jpg",
+          "story": "Poppy resides with her family in Northern California. As you can see, Poppy is even more beautiful grown up!"
+        },
+        {
+          "name": "Jingle/Tiberius",
+          "photo": "/images/tails/jingle-pup.jpg",
+          "story": "Jingle was stunning with his deep red coat perfectly complemented by white markings adorning his paws, chin, and chest."
+        },
+        {
+          "name": "Tiberius/Jingle",
+          "photo": "/images/tails/tiberius-now.jpg",
+          "story": "Tiberius remains just as handsome as ever! He has the most fun family in the beautiful state of Virginia. Tiberius also lives just down the street from his sister Noel whom he sees often. He has a very fun life!"
+        },
+        {
+          "name": "Noel",
+          "photo": "/images/tails/noel-pup.jpg",
+          "story": "From the time Noel opened her eyes, she was the cutest little spit-fire! Cute as could be but always in the middle of things!"
+        },
+        {
+          "name": "Noel",
+          "photo": "/images/tails/noel-now.jpg",
+          "story": "Noel resides at her beautiful home in Virginia with her very loving retired family. She is the center of their life and also gets to have many playdates with her brother Tiberius."
+        },
+        {
+          "name": "Carmel/Dougie",
+          "photo": "/images/tails/carmel-pup.jpg",
+          "story": "Carmel was just as sweet as he is cute! He was always the best play mate for all the rest of his siblings."
+        },
+        {
+          "name": "Dougie/Carmel",
+          "photo": "/images/tails/dougie-now.jpg",
+          "story": "Dougie has grown up to be absolutely stunning! He resides in his very loving home in Stockton. He is very popular with the kids."
+        },
+        {
+          "name": "Bell/Bella",
+          "photo": "/images/tails/bell-pup.jpg",
+          "story": "Bell was our only female that had the deep dark red coat. She was beautiful and such a sweet personality!"
+        },
+        {
+          "name": "Bella/Bell",
+          "photo": "/images/tails/bella-now.jpg",
+          "story": "Bella was the very first puppy to find her forever home. I believe it was love at first sight for her forever family."
+        },
+        {
+          "name": "Cocoa/Cachi",
+          "photo": "/images/tails/cocoa-pup.jpg",
+          "story": "Cocoa was the very first puppy born!"
+        },
+        {
+          "name": "Cachi/Cocoa",
+          "photo": "/images/tails/cachi-now.jpg",
+          "story": "Not much has changed — Cachi is still as handsome as ever."
+        },
+        {
+          "name": "Cookie/Bentley",
+          "photo": "/images/tails/cookie-pup.jpg",
+          "story": "Cookie was our largest puppy. His rich red coat made him stand out from his siblings."
+        },
+        {
+          "name": "Bentley/Cookie",
+          "photo": "/images/tails/bentley-now.jpg",
+          "story": "Bentley found his forever home in Fresno, California."
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/gallery/g16.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g14.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g05.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g08.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g02.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g19.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g01.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g13.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g18.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g11.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g04.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g15.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g09.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g12.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g03.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g17.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g10.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g07.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g06.webp",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g20.jpeg",
+      "caption": ""
+    },
+    {
+      "image": "/images/gallery/g21.jpeg",
+      "caption": ""
+    }
+  ]
+}

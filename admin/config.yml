@@ -1,0 +1,122 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+publish_mode: simple
+site_url: https://gingersdoodles.net
+logo_url: https://gingersdoodles.net/images/ginger-new.jpg
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - name: "site"
+        label: "Litters, Puppy Tails & Photos"
+        file: "content.json"
+        description: "Change anything here, then press Publish. The website updates in about a minute."
+        fields:
+          - label: "Litters & waitlist (the three cards on the home page and the Litters page)"
+            name: "litters"
+            widget: "list"
+            label_singular: "Litter"
+            collapsed: true
+            summary: "{{fields.title}} — {{fields.status}}"
+            hint: "Drag to reorder. The first card is the one families see first."
+            fields:
+              - label: "Pairing name (e.g. Sugar & Sonic)"
+                name: "title"
+                widget: "string"
+              - label: "Green badge on the photo"
+                name: "status"
+                widget: "select"
+                default: "Waitlist open"
+                options:
+                  - "Waitlist open"
+                  - "Puppies here"
+                  - "Planned"
+                  - "Reserved"
+                  - "All placed"
+                hint: "Pick one. Leave it as-is if nothing has changed."
+              - label: "Small grey word beside the name (e.g. Multi-gen)"
+                name: "tag"
+                widget: "string"
+                required: false
+              - label: "Description under the name"
+                name: "body"
+                widget: "text"
+                hint: "Two sentences is about right — breed, parents, and size."
+              - label: "Photos on this card"
+                name: "photos"
+                widget: "list"
+                label_singular: "Photo"
+                summary: "{{fields.label}}"
+                hint: "One photo fills the card. Two photos split it down the middle, left and right."
+                fields:
+                  - label: "Photo"
+                    name: "image"
+                    widget: "image"
+                    choose_url: false
+                  - label: "Name across the bottom of the photo (e.g. SUGAR)"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Which part of the photo to show"
+                    name: "focus"
+                    widget: "select"
+                    default: "40%"
+                    options:
+                      - { label: "Top — good for tall photos of faces", value: "20%" }
+                      - { label: "Upper", value: "32%" }
+                      - { label: "Middle", value: "50%" }
+                      - { label: "Lower", value: "70%" }
+                    hint: "Only matters if the photo looks badly cropped on the card."
+
+          - label: "Puppy Tails (grouped by litter)"
+            name: "tailGroups"
+            widget: "list"
+            label_singular: "Litter group"
+            collapsed: true
+            summary: "{{fields.litter}}"
+            fields:
+              - label: "Litter heading (e.g. Sugar & Sonic's Candy Litter)"
+                name: "litter"
+                widget: "string"
+              - label: "Puppies in this litter"
+                name: "entries"
+                widget: "list"
+                label_singular: "Puppy"
+                collapsed: true
+                summary: "{{fields.name}}"
+                hint: "These show two-across, in this order. Keep the puppy photo and the grown-up photo next to each other."
+                fields:
+                  - label: "Name (e.g. Skittle/Goldie)"
+                    name: "name"
+                    widget: "string"
+                    hint: "Our name first, then the family's name."
+                  - label: "Photo"
+                    name: "photo"
+                    widget: "image"
+                    choose_url: false
+                  - label: "Their story"
+                    name: "story"
+                    widget: "text"
+
+          - label: "Photo gallery"
+            name: "gallery"
+            widget: "list"
+            label_singular: "Photo"
+            collapsed: true
+            summary: "{{fields.caption}}"
+            hint: "Drag to reorder — the first photos show at the top of the Gallery page."
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                choose_url: false
+              - label: "Caption (who is in the photo)"
+                name: "caption"
+                widget: "string"
+                required: false
+                hint: "Shows under the photo when someone clicks it. Leave blank for no caption."

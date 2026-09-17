@@ -1,0 +1,336 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Puppy application form — embedded component</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://gingersdoodles.net/puppy-application">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    html, body { max-width: 100%; overflow-x: hidden; }
+    img, svg, video, iframe { max-width: 100%; }
+    body { font-family: 'Mulish', -apple-system, BlinkMacSystemFont, sans-serif; background: #faf8f4; color: #241f19; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    a { text-decoration: none; color: #8a5a34; }
+    a:hover { color: #6f4728; }
+    img { display: block; }
+    input, select, textarea { font-family: 'Mulish', sans-serif; }
+    input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #8a5a34; outline-offset: 2px; }
+    ::-webkit-scrollbar { width: 11px; }
+    ::-webkit-scrollbar-thumb { background: #e2d7c6; border-radius: 8px; border: 3px solid #faf8f4; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] > summary svg { transform: rotate(180deg); }
+    details > summary svg { transition: transform .2s ease; }
+    .masonry { column-count: 4; column-gap: 16px; }
+    @media (max-width: 940px) {
+      .hero, .about, .two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
+      .feat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .foot-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
+      .navlinks { display: none !important; }
+      .hero h1 { font-size: 52px !important; }
+      .sticky-col { position: static !important; }
+      .page-title { font-size: 46px !important; }
+      .masonry { column-count: 2; }
+      .gal-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+    @media (max-width: 560px) {
+      .feat-grid, .field-row { grid-template-columns: 1fr !important; }
+      .hero h1 { font-size: 44px !important; }
+      .page-title { font-size: 38px !important; }
+      .masonry { column-count: 1; }
+    }
+    @media (max-width: 640px) {
+      div[aria-hidden="true"][style*="height: 32px"], div[aria-hidden="true"][style*="height:32px"] { display: none !important; }
+      h2 { font-size: 29px !important; line-height: 1.14 !important; }
+      label { font-size: 17px !important; }
+    }
+    @media (max-width: 640px) {
+      .nav-cta { display: none !important; }
+    }
+
+  </style>
+<style>.st1:hover{background:#6f4728 !important}
+.st2:hover{border-color:#8a5a34 !important;color:#8a5a34 !important}
+.st3:hover{background:#6f4728 !important}</style></head>
+<body>
+
+
+
+<div style="width:100%">
+  <div id="sent-screen" style="display:none">
+    <div style="max-width:720px;margin:0 auto;background:#fff;border:1px solid #ece4d8;border-radius:22px;padding:56px 44px;text-align:center;box-shadow:0 24px 50px -38px rgba(68,53,40,.5)">
+      <span style="width:64px;height:64px;border-radius:999px;background:#efe4d3;display:inline-flex;align-items:center;justify-content:center;margin-bottom:22px"><svg width="24" height="24" fill="#8a5a34" viewBox="0 0 24 24"><circle cx="6.5" cy="10.5" r="1.9"></circle><circle cx="11" cy="7" r="1.9"></circle><circle cx="16.5" cy="8" r="1.9"></circle><circle cx="19.5" cy="12.5" r="1.7"></circle><path d="M12.5 12.5c-2.4 0-4.6 1.7-5.2 4-.4 1.7.9 3.2 2.6 3.2.9 0 1.7-.4 2.6-.4s1.7.4 2.6.4c1.7 0 3-1.5 2.6-3.2-.6-2.3-2.8-4-5.2-4z"></path></svg></span>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:36px;line-height:1.1;color:#241f19;margin:0 0 14px">One last step — press send</h2>
+      <p style="font-size:17px;color:#5b5348;max-width:500px;margin:0 auto 26px">Your email app should have opened with your application already written out and addressed to us. Send that message and it is on its way. Nothing is submitted until you do.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+        <a href="mailto:gingersdoodles@yahoo.com" id="mail-fallback" style="display:inline-flex;align-items:center;gap:9px;background:#8a5a34;color:#fff;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px" class="st1"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 6 10-6"></path></svg> Open the email again</a>
+        <a href="/gallery" style="border:1.5px solid #d3c8b6;color:#463f36;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px" class="st2">Browse the gallery</a>
+      </div>
+      <p style="font-size:14px;color:#7a6449;margin:28px auto 0;max-width:440px">If no email app opened, write to <a href="mailto:gingersdoodles@yahoo.com" style="color:#8a5a34;font-weight:700">gingersdoodles@yahoo.com</a> and we will send you the questions directly.</p>
+    </div>
+  </div>
+
+  <div id="form-screen">
+  <form id="app-form" style="max-width:860px;margin:0 auto;background:#fff;border:1px solid #ece4d8;border-radius:22px;padding:8px 44px 44px;box-shadow:0 24px 50px -38px rgba(68,53,40,.5)">
+    <div style="text-align:center;padding:40px 0 12px;border-bottom:1px solid #ece4d8">
+      <span style="width:56px;height:56px;border-radius:999px;background:#efe4d3;display:inline-flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="24" height="24" fill="#8a5a34" viewBox="0 0 24 24"><circle cx="6.5" cy="10.5" r="1.9"></circle><circle cx="11" cy="7" r="1.9"></circle><circle cx="16.5" cy="8" r="1.9"></circle><circle cx="19.5" cy="12.5" r="1.7"></circle><path d="M12.5 12.5c-2.4 0-4.6 1.7-5.2 4-.4 1.7.9 3.2 2.6 3.2.9 0 1.7-.4 2.6-.4s1.7.4 2.6.4c1.7 0 3-1.5 2.6-3.2-.6-2.3-2.8-4-5.2-4z"></path></svg></span>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:40px;line-height:1.08;color:#20475e;margin:0 0 12px">Puppy Contract Form</h2>
+      <p style="font-size:16px;color:#5b5348;max-width:520px;margin:0 auto 28px">(Completing this application is a step in the process to acquiring a puppy from Ginger's Doodles, but it does not guarantee you will get a puppy from this litter or any future litter.)</p>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">BUYER NAME</div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Buyer Name</label>
+          <input type="text" name="first_name" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">First Name</span>
+        </div>
+        <div>
+          <div style="height:32px" aria-hidden="true"></div>
+          <input type="text" name="last_name" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Last Name</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">CONTACT</div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Email</label>
+          <input type="email" name="email" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">example@example.com</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Phone Number</label>
+          <input type="tel" name="phone" placeholder="(000) 000-0000" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Please enter a valid phone number.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">ADDRESS</div>
+      <div style="margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Address</label>
+          <input type="text" name="street" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Street Address</span>
+        </div>
+      </div>
+      <div style="margin-bottom:26px">
+        <div>
+          <div style="height:32px" aria-hidden="true"></div>
+          <input type="text" name="street2" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Street Address Line 2</span>
+        </div>
+      </div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <div style="height:32px" aria-hidden="true"></div>
+          <input type="text" name="city" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">City</span>
+        </div>
+        <div>
+          <div style="height:32px" aria-hidden="true"></div>
+          <input type="text" name="state" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">State / Province</span>
+        </div>
+      </div>
+      <div style="margin-bottom:26px">
+        <div>
+          <div style="height:32px" aria-hidden="true"></div>
+          <input type="text" name="zip" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Postal / Zip Code</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">ABOUT YOUR HOME</div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Do you own or rent your home?</label>
+          <select name="housing" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Own</option>
+            <option>Rent</option>
+            <option>Other</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Renters: we may ask for landlord approval.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Adults and children at home</label>
+          <input type="text" name="household" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Please include children’s ages.</span>
+        </div>
+      </div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Other pets in the home</label>
+          <input type="text" name="pets" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Species, breed, age, and temperament.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Hours the puppy would be alone on a normal day</label>
+          <select name="alone" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>0–2 hours</option>
+            <option>3–4 hours</option>
+            <option>5–6 hours</option>
+            <option>7–8 hours</option>
+            <option>More than 8 hours</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">An honest answer helps us match you well.</span>
+        </div>
+      </div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Do you have a fenced yard?</label>
+          <select name="yard" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Yes, fully fenced</option>
+            <option>Partially fenced</option>
+            <option>No yard</option>
+            <option>Shared or community space</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Not required — we just like to know.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Have you raised a puppy before?</label>
+          <select name="experience" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Yes, a doodle</option>
+            <option>Yes, another breed</option>
+            <option>No, this is our first</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px"></span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">THE PUPPY YOU ARE HOPING FOR</div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Breed</label>
+          <select name="breed" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Australian Labradoodle</option>
+            <option>Australian Bernedoodle</option>
+            <option>Either — help us decide</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Not sure? Choose either and we will advise.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Litter of interest</label>
+          <select name="litter" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Current litter</option>
+            <option>Sugar &amp; Sonic pairing</option>
+            <option>Next season’s Bernedoodle litter</option>
+            <option>Any upcoming litter</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Waitlist families hear about new pairings first.</span>
+        </div>
+      </div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Sex preference</label>
+          <select name="sex" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Male</option>
+            <option>Female</option>
+            <option>No preference</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px"></span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Size preference</label>
+          <select name="size" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>Mini (20–30 lb)</option>
+            <option>Medium (30–45 lb)</option>
+            <option>No preference</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Grown weight, roughly.</span>
+        </div>
+      </div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Color preference</label>
+          <input type="text" name="color" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Cream, apricot, chocolate, parti, merle, tri — or no preference.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">When are you hoping to bring a puppy home?</label>
+          <select name="timing" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+            <option>As soon as one is available</option>
+            <option>Within 3 months</option>
+            <option>Within 6 months</option>
+            <option>Within a year</option>
+            <option>Flexible</option>
+          </select>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px"></span>
+        </div>
+      </div>
+      <div style="margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Tell us about your family</label>
+          <textarea name="about" rows="5" placeholder="Your household, your days, the kind of dog you are hoping for, and anything else you would like Lana to know." style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff;resize:vertical"></textarea>
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">This is the part we read most closely.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">AGREEMENTS</div>
+      <label style="display:flex;align-items:flex-start;gap:13px;margin-bottom:18px;cursor:pointer">
+        <input type="checkbox" name="agree_companion" required="" style="width:19px;height:19px;flex:none;margin-top:2px;accent-color:#8a5a34">
+        <span style="font-size:15px;color:#463f36">I understand this puppy is sold as a family companion on a spay/neuter agreement, with no breeding rights.</span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:13px;margin-bottom:18px;cursor:pointer">
+        <input type="checkbox" name="agree_vet" required="" style="width:19px;height:19px;flex:none;margin-top:2px;accent-color:#8a5a34">
+        <span style="font-size:15px;color:#463f36">I agree to have my puppy examined by my own veterinarian within 72 hours of go-home day.</span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:13px;margin-bottom:18px;cursor:pointer">
+        <input type="checkbox" name="agree_return" required="" style="width:19px;height:19px;flex:none;margin-top:2px;accent-color:#8a5a34">
+        <span style="font-size:15px;color:#463f36">If I am ever unable to keep this dog, I agree to contact Ginger’s Doodles first so the dog can come back to them.</span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:13px;margin-bottom:18px;cursor:pointer">
+        <input type="checkbox" name="agree_care" required="" style="width:19px;height:19px;flex:none;margin-top:2px;accent-color:#8a5a34">
+        <span style="font-size:15px;color:#463f36">I agree to keep my puppy current on vaccinations, grooming, and routine veterinary care for the life of the dog.</span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:13px;margin-bottom:18px;cursor:pointer">
+        <input type="checkbox" name="agree_deposit" required="" style="width:19px;height:19px;flex:none;margin-top:2px;accent-color:#8a5a34">
+        <span style="font-size:15px;color:#463f36">I understand a reservation fee holds my pick spot, is applied to the puppy’s total, and is non-refundable if I change my mind.</span>
+      </label>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding:34px 0 8px">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:24px">SIGNATURE</div>
+      <div class="field-row" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-bottom:26px">
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Type your full name as your signature</label>
+          <input type="text" name="signature" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">This stands in for a signature on the final contract.</span>
+        </div>
+        <div>
+          <label style="display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:19px;color:#241f19;margin-bottom:9px">Date</label>
+          <input type="date" name="date" style="width:100%;padding:13px 15px;border:1.5px solid #cbb99f;border-radius:9px;font-size:16px;color:#241f19;background:#fff">
+          <span style="display:block;font-size:13px;color:#7a6449;margin-top:7px">Today’s date.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #ece4d8;padding-top:30px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <button type="submit" style="background:#8a5a34;color:#fff;font-family:'Mulish',sans-serif;font-weight:700;font-size:17px;padding:16px 34px;border:none;border-radius:999px;cursor:pointer;transition:background .15s" class="st3">Review &amp; send by email</button>
+      <span style="font-size:14px;color:#7a6449;max-width:440px">This opens your email app with everything filled in — you just press send. No payment is taken here.</span>
+    </div>
+  </form>
+  </div>
+</div>
+
+
+
+
+  <script src="/apply.js"></script>
+</body></html>
