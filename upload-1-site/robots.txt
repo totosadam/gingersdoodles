@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /puppy-application-form
+
+Sitemap: https://gingersdoodles.net/sitemap.xml
