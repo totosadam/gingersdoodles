@@ -62,7 +62,9 @@
       .hero h1 { font-size: 44px !important; }
       .page-title { font-size: 38px !important; }
     }
-    .mobnav { display: none; }
+    .mobnav { display: block; position: relative; }
+    .navlinks { display: none !important; } /*nolinks*/
+    .mobnav-panel { left: auto !important; right: 0 !important; width: 280px; border: 1px solid #ece4d8; border-radius: 14px; margin-top: 8px; }
     .mobnav > summary { list-style: none; cursor: pointer; width: 46px; height: 46px; border: 1px solid #ddcdb4; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fff; }
     .mobnav > summary::-webkit-details-marker { display: none; }
     .mobnav[open] > summary { background: #efe4d3; }
@@ -71,6 +73,7 @@
     .mobnav-panel a:last-child { border-bottom: none; color: #8a5a34; }
     @media (max-width: 1020px) {
       .mobnav { display: block; position: static; }
+      .mobnav-panel { left: 0 !important; right: 0 !important; width: auto; border: 0; border-bottom: 1px solid #ece4d8; border-radius: 0; margin-top: 0; }
       .navlinks { display: none !important; }
       footer a[href] { display: inline-block; padding: 4px 0; }
     }
@@ -182,7 +185,197 @@
     </div>
   </section>
 
-  <section style="max-width:1120px;margin:0 auto;padding:72px 28px 20px">
+  <section id="available" style="max-width:1120px;margin:0 auto;padding:64px 28px 20px">
+    <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#8a5a34;margin-bottom:14px">AVAILABLE NOW</div>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:40px;line-height:1.09;color:#241f19;margin:0 0 14px">Meet the puppies</h2>
+    <p style="font-size:16px;color:#5b5348;max-width:600px;margin:0 0 32px">Send in an application to reserve your pick — waitlist families choose first.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px;align-items:start" data-cms-list="available">
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/doc-hudson.jpg" alt="Doc Hudson, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Doc Hudson</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Doc →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/mater.jpg" alt="Mater, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Mater</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Mater →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/guido.jpg" alt="Guido, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Guido</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Guido →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/luigi.jpg" alt="Luigi, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Luigi</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Luigi →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/finn-mcmissile.jpg" alt="Finn McMissile, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Finn McMissile</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Finn →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/lightning-mcqueen.jpg" alt="Lightning McQueen, male Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Lightning McQueen</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Boy</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Lightning →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/cruz-ramirez.jpg" alt="Cruz Ramirez, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Cruz Ramirez</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Cruz →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/holly-shiftwell.jpg" alt="Holly Shiftwell, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Holly Shiftwell</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Holly →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/tia.jpg" alt="Tia, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Tia</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Tia →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/flo.jpg" alt="Flo, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Flo</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Flo →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/mia.jpg" alt="Mia, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Mia</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Mia →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/lizzie.jpg" alt="Lizzie, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Lizzie</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Lizzie →</a>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
+        <div style="position:relative;background:#efe4d3;line-height:0">
+          <img src="/images/available/sally.jpg" alt="Sally, female Australian Bernedoodle puppy" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
+          <span style="position:absolute;top:14px;left:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 12px;border-radius:999px;z-index:2;background:#3f7a4a">AVAILABLE</span>
+        </div>
+        <div style="padding:20px 22px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;color:#241f19;margin:0">Sally</h3>
+            <span style="font-size:13px;font-weight:700;color:#7d6a54">Girl</span>
+          </div>
+          <p style="font-size:14px;color:#5b5348;margin:0 0 14px;display:none"></p>
+          <a href="/puppy-application" style="font-size:14px;font-weight:800;color:#8a5a34;letter-spacing:.04em">Reserve Sally →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1120px;margin:0 auto;padding:48px 28px 20px">
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px" class="pup-grid" data-cms-list="litters">
       <div style="background:#fff;border:1px solid #ece4d8;border-radius:20px;overflow:hidden;box-shadow:0 16px 34px -26px rgba(68,53,40,.4)">
         <div style="position:relative;aspect-ratio:1/1;background:#efe4d3;display:flex">

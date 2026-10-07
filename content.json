@@ -50,6 +50,99 @@
       ]
     }
   ],
+  "available": [
+    {
+      "name": "Doc Hudson",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/doc-hudson.jpg",
+      "note": ""
+    },
+    {
+      "name": "Mater",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/mater.jpg",
+      "note": ""
+    },
+    {
+      "name": "Guido",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/guido.jpg",
+      "note": ""
+    },
+    {
+      "name": "Luigi",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/luigi.jpg",
+      "note": ""
+    },
+    {
+      "name": "Finn McMissile",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/finn-mcmissile.jpg",
+      "note": ""
+    },
+    {
+      "name": "Lightning McQueen",
+      "sex": "Boy",
+      "status": "Available",
+      "photo": "/images/available/lightning-mcqueen.jpg",
+      "note": ""
+    },
+    {
+      "name": "Cruz Ramirez",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/cruz-ramirez.jpg",
+      "note": ""
+    },
+    {
+      "name": "Holly Shiftwell",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/holly-shiftwell.jpg",
+      "note": ""
+    },
+    {
+      "name": "Tia",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/tia.jpg",
+      "note": ""
+    },
+    {
+      "name": "Flo",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/flo.jpg",
+      "note": ""
+    },
+    {
+      "name": "Mia",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/mia.jpg",
+      "note": ""
+    },
+    {
+      "name": "Lizzie",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/lizzie.jpg",
+      "note": ""
+    },
+    {
+      "name": "Sally",
+      "sex": "Girl",
+      "status": "Available",
+      "photo": "/images/available/sally.jpg",
+      "note": ""
+    }
+  ],
   "tailGroups": [
     {
       "litter": "Sugar & Sonic’s Candy Litter",

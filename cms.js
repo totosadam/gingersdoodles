@@ -104,6 +104,34 @@
     });
   }
 
+  /* ---- available puppies ---- */
+  var PSTATUS = { 'Available': '#3f7a4a', 'Reserved': '#8a6524', 'Placed': '#6b5b47' };
+  function renderAvailable(grid, items) {
+    var proto = grid.children[0];
+    if (!proto) return;
+    proto = proto.cloneNode(true);
+    grid.innerHTML = '';
+    items.forEach(function (p) {
+      var card = proto.cloneNode(true);
+      txt(card, 'h3', p.name);
+      txt(card, 'h3 + span', p.sex || '');
+      img(card, card.querySelector('img'), p.photo, p.name ? p.name + ' \u2014 Ginger\u2019s Doodles puppy' : '');
+      var note = card.querySelector('p');
+      if (note) { note.textContent = p.note || ''; note.style.display = p.note ? '' : 'none'; }
+      var badge = card.querySelector('span[style*="border-radius:999px"]');
+      if (badge) {
+        badge.textContent = (p.status || 'Available').toUpperCase();
+        badge.style.background = PSTATUS[p.status] || '#3f7a4a';
+      }
+      var a = card.querySelector('a');
+      if (a) {
+        if (p.status === 'Placed') a.style.display = 'none';
+        else { a.style.display = ''; a.textContent = (p.status === 'Reserved' ? 'Join the waitlist' : 'Reserve ' + String(p.name || '').split(' ')[0]) + ' \u2192'; }
+      }
+      grid.appendChild(card);
+    });
+  }
+
   /* ---- gallery ---- */
   function renderGallery(grid, photos) {
     var proto = grid.querySelector('button');
@@ -123,6 +151,9 @@
   function apply(c) {
     document.querySelectorAll('[data-cms-list="litters"]').forEach(function (g) {
       if (c.litters && c.litters.length) renderLitters(g, c.litters);
+    });
+    document.querySelectorAll('[data-cms-list="available"]').forEach(function (g) {
+      if (c.available && c.available.length) renderAvailable(g, c.available);
     });
     if (c.tailGroups && c.tailGroups.length) renderTails(document, c.tailGroups);
     document.querySelectorAll('[data-cms-list="gallery"]').forEach(function (g) {

@@ -59,7 +59,9 @@
       .hero h1 { font-size: 44px !important; }
       .page-title { font-size: 38px !important; }
     }
-    .mobnav { display: none; }
+    .mobnav { display: block; position: relative; }
+    .navlinks { display: none !important; } /*nolinks*/
+    .mobnav-panel { left: auto !important; right: 0 !important; width: 280px; border: 1px solid #ece4d8; border-radius: 14px; margin-top: 8px; }
     .mobnav > summary { list-style: none; cursor: pointer; width: 46px; height: 46px; border: 1px solid #ddcdb4; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fff; }
     .mobnav > summary::-webkit-details-marker { display: none; }
     .mobnav[open] > summary { background: #efe4d3; }
@@ -68,6 +70,7 @@
     .mobnav-panel a:last-child { border-bottom: none; color: #8a5a34; }
     @media (max-width: 1020px) {
       .mobnav { display: block; position: static; }
+      .mobnav-panel { left: 0 !important; right: 0 !important; width: auto; border: 0; border-bottom: 1px solid #ece4d8; border-radius: 0; margin-top: 0; }
       .navlinks { display: none !important; }
       footer a[href] { display: inline-block; padding: 4px 0; }
     }

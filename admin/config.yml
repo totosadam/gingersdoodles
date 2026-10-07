@@ -11,6 +11,8 @@ logo_url: https://gingersdoodles.net/images/ginger-new.jpg
 collections:
   - name: "content"
     label: "Website Content"
+    editor:
+      preview: false
     files:
       - name: "site"
         label: "Litters, Puppy Tails & Photos"
@@ -72,6 +74,36 @@ collections:
                       - { label: "Middle", value: "50%" }
                       - { label: "Lower", value: "70%" }
                     hint: "Only matters if the photo looks badly cropped on the card."
+
+          - label: "Available puppies (shown on the Litters page)"
+            name: "available"
+            widget: "list"
+            label_singular: "Puppy"
+            collapsed: true
+            summary: "{{fields.name}} — {{fields.status}}"
+            hint: "Add a puppy with the + button. Change a puppy to Reserved or Placed when families choose, or delete it."
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Boy or girl"
+                name: "sex"
+                widget: "select"
+                default: "Boy"
+                options: ["Boy", "Girl"]
+              - label: "Badge on the photo"
+                name: "status"
+                widget: "select"
+                default: "Available"
+                options: ["Available", "Reserved", "Placed"]
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                choose_url: false
+              - label: "Short note (optional — color, personality)"
+                name: "note"
+                widget: "string"
+                required: false
 
           - label: "Puppy Tails (grouped by litter)"
             name: "tailGroups"

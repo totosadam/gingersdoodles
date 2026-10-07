@@ -1,0 +1,18 @@
+# component fetched by the application page (must resolve exactly)
+/Puppy%20Application%20Form.dc    /Puppy%20Application%20Form.dc.html    200
+
+# legacy .dc.html paths -> clean paths
+/Gingers%20Doodles.dc.html    /                        301
+/Litters.dc.html              /litters                 301
+/Our%20Dogs.dc.html           /our-dogs                301
+/Gallery.dc.html              /gallery                 301
+/Why%20Us.dc.html             /why-us                  301
+/How%20It%20Works.dc.html     /how-it-works            301
+/The%20Breeds.dc.html         /the-breeds              301
+/About.dc.html                /about                   301
+/FAQ.dc.html                  /faq                     301
+/Puppy%20Application.dc.html  /puppy-application       301
+/apply                        /puppy-application       301
+/application                  /puppy-application       301
+/stud-service                 /stud                    301
+/burt                         /stud                    301
