@@ -2,32 +2,22 @@ Ginger's Doodles — website source
 =================================
 
 This folder IS the website. Everything in it sits at the top level of the
-GitHub repository, and Netlify serves it as-is.
+GitHub repository, and Netlify serves it as-is (no build step).
 
-  index.html ... 404.html      the pages, plain HTML (no build step)
-  content.json                 the content your client edits
-  cms.js                       reads content.json into the pages
+  *.html                       the pages, plain static HTML (every word is real text)
+  edit.html                    the visual editor, at gingersdoodles.net/edit
+  netlify/functions/publish.js saves editor changes to GitHub (needs 3 Netlify variables)
+  netlify.toml, _redirects     headers, caching, redirects, functions folder
   gallery.js, apply.js         photo lightbox, application form
-  admin/                       the /admin login and editor
-  images/                      all photos
-  images/uploads/              photos your client uploads land here
-  netlify.toml, _redirects     headers, caching, old-URL redirects
+  images/                      all photos (new uploads land in images/uploads/)
   robots.txt, sitemap.xml      SEO
 
-WHAT THE CLIENT CAN EDIT AT /admin
-  - Litters & waitlist: the three cards (home page + Litters page)
-  - Puppy Tails: every entry, grouped by litter
-  - Photo gallery: photos, order, captions
-  She can add, delete, and reorder items in all three.
-
-Everything else (Why Us, How It Works, The Breeds, FAQ, About, Our Dogs,
-Stud, the application form) is fixed in the HTML and changes here.
+NETLIFY VARIABLES (Project configuration -> Environment variables)
+  ADMIN_PASSWORD   the password the client types at /edit
+  GITHUB_TOKEN     fine-grained token, this repo only, Contents: Read and write
+  GITHUB_REPO      totosadam/gingersdoodles
+After adding or changing a variable: Deploys -> Trigger deploy -> Clear cache and deploy site.
 
 HOW A CHANGE GOES LIVE
-  /admin -> edit -> Publish -> commits to GitHub -> Netlify rebuilds -> live
-  in about a minute. Full history and one-click revert live in the repo.
-
-IF SOMETHING LOOKS WRONG
-  Pages always show their built-in content first, then swap in content.json.
-  So if content.json ever breaks, the site still renders the last built
-  version rather than going blank.
+  /edit -> change anything -> Save & publish -> commits to GitHub -> Netlify
+  redeploys -> live in about a minute. Every publish is a backup (Backups button).

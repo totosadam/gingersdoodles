@@ -16,3 +16,7 @@
 /application                  /puppy-application       301
 /stud-service                 /stud                    301
 /burt                         /stud                    301
+
+# visual editor
+/edit   /edit.html   200
+/admin  /edit   302
